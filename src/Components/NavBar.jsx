@@ -11,7 +11,12 @@ import { getImages } from "../api/Images";
 const NavBar = () => {
   return (
     <nav className="flex gap-5 justify-center w-screen items-center px-4 fixed bg-white h-24 z-50">
-      <img src={"../../src/Images/pinterest.png"} className="w-7" />
+      <img
+        src={
+          "https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png?20160129083321"
+        }
+        className="w-7"
+      />
       <ul className="flex">
         <li className="h-12 min-w-14">
           <button className="bg-black rounded-3xl text-white px-4 py-3 font-semibold text-lg">
