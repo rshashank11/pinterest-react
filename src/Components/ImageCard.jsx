@@ -1,6 +1,6 @@
 import React from "react";
 
-const ImageCard = ({ imageURL, index }) => {
+const ImageCard = ({ imageURL }) => {
   const gridRowEndValues = ["span 26", "span 33", "span 45"];
   const randomGridRowEnd =
     gridRowEndValues[Math.floor(Math.random() * gridRowEndValues.length)];
@@ -10,7 +10,6 @@ const ImageCard = ({ imageURL, index }) => {
       style={{ gridRowEnd: `${randomGridRowEnd}` }}
     >
       <img
-        key={index}
         className={`p-0 rounded-2xl h-full object-cover object-center`}
         src={`${imageURL}`}
       />

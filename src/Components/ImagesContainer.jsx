@@ -14,7 +14,7 @@ const ImagesContainer = () => {
       className="m-0 p-0 absolute mt-[100px] w-full justify-center grid"
     >
       {images.map((image, index) => {
-        return <ImageCard imageURL={image.largeImageURL} index={index} />;
+        return <ImageCard key={index} imageURL={image.largeImageURL} />;
       })}
     </div>
   );

@@ -22,8 +22,8 @@ function App() {
   );
 }
 
-const loader = async ({ request: { signal } }) => {
-  const images = await getImages("q=food&per_page=200", { signal });
+const loader = async () => {
+  const images = await getImages("q=food&per_page=200");
   return { images };
 };
 
