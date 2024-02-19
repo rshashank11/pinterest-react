@@ -7,7 +7,7 @@ export const getImages = async (query) => {
   const controller = new AbortController();
   const signal = controller.signal;
   const data = axios
-    .get(requestURL, { maxRedirects: 0, signal })
+    .get(requestURL, { maxRedirects: 0, signal,  })
     .then((response) => {
       return response.data;
     })

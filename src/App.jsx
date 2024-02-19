@@ -11,6 +11,7 @@ import ImagesContainer from "./Components/ImagesContainer";
 function App() {
   const dispatch = useDispatch();
   const { images } = useLoaderData();
+  // console.log(images);
   useEffect(() => {
     dispatch(addImages(images.hits));
   }, [images]);
